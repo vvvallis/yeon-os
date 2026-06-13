@@ -19,12 +19,18 @@ modules:
 
   - type: dnf
     repos:
+      cleanup: true
+      files:
+        - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
       copr:
         - secureblue/packages
+      keys:
+        - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
       packages:
-        # Brave (repo file은 files/system/etc/yum.repos.d/ 에 배치)
-        - brave-browser
+        - repo: brave-browser
+          packages:
+            - brave-browser
         # secureblue COPR
         - bubblejail
         # 보안/점검 도구
