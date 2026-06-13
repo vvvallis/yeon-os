@@ -71,41 +71,52 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - ai.jan.Jan
-          - com.bitwarden.desktop
-          - com.github.Matoking.protontricks
-          - com.github.ryonakano.reco
-          - com.github.tchx84.Flatseal
-          - com.github.wwmm.easyeffects
-          - com.notesnook.Notesnook
-          - com.rafaelmardojai.Blanket
-          - com.surfshark.Surfshark
-          - com.vysp3r.ProtonPlus
-          - de.haeckerfelix.Shortwave
-          - dev.vencord.Desktop
-          - io.github.DenysMb.Kontainer
-          - io.github.davidoc26.wallpaper_selector
-          - io.github.flattool.Warehouse
-          - io.github.giantpinkrobots.flatsweep
-          - io.github.seadve.Mousai
-          - io.github.tobagin.keysmith
-          - io.gitlab.adhami3310.Impression
-          - io.gitlab.librewolf-community
-          - io.missioncenter.MissionCenter
-          - it.mijorus.gearlever
-          - net.gpro.gproapp
-          - net.nokyan.Resources
-          - org.gnome.Firmware
-          - org.gnome.World.PikaBackup
-          - org.gnome.World.Secrets
-          - org.kde.gwenview
-          - org.kde.haruna
-          - org.kde.kcalc
-          - org.kde.okular
-          - org.nickvision.tubeconverter
-          - org.qbittorrent.qBittorrent
-          - org.telegram.desktop
+          # --- 웹 브라우저 & 인터넷 ---
+          - org.mozilla.firefox             # 파이어폭스 순정 웹 브라우저
+          - io.gitlab.librewolf-community   # 사생활 보호/보안 특화 브라우저 (리브레울프)
+          - org.telegram.desktop            # 텔레그램 데스크톱 공식 메신저
+          - org.qbittorrent.qBittorrent     # 광고 없는 오픈소스 토렌트 다운로더
+
+          # --- 시스템 관리 & 패키지 도구 ---
+          - com.github.tchx84.Flatseal      # 플랫팩 앱들의 샌드박스 권한 제어기
+          - io.github.DenysMb.Kontainer     # 디스트로박스(Distrobox) 컨테이너 관리 GUI
+          - io.github.flattool.Warehouse    # 플랫팩 앱 데이터 및 저장소 통합 관리자
+          - io.github.giantpinkrobots.flatsweep # 플랫팩 삭제 후 남은 찌꺼기 파일 청소기
+          - it.mijorus.gearlever            # 독립형 AppImage 파일 통합 및 관리 툴
+          - org.gnome.Firmware              # 하드웨어 장치 펌웨어 업데이트 도구
+
+          # --- 시스템 모니터링 & 백업 ---
+          - io.missioncenter.MissionCenter  # 윈도우 스타일의 직관적인 성능 모니터
+          - net.nokyan.Resources            # 미니멀하고 아름다운 하드웨어 자원 모니터
+          - org.gnome.World.PikaBackup      # BorgBackup 기반의 안전한 데이터 백업/복구
+
+          # --- 보안 & 개인정보 보호 ---
+          - com.bitwarden.desktop           # 오픈소스 크로스 플랫폼 비밀번호 관리자
+          - com.surfshark.Surfshark         # 서프샤크 VPN 공식 데스크톱 클라이언트
+          - org.gnome.World.Secrets         # Keepass 형식 포맷 지원 비밀번호 보관소
+          - io.github.tobagin.keysmith      # 2단계 인증(2FA) OTP 토큰 생성기
+
+          # --- 멀티미디어 & 사운드 ---
+          - com.github.wwmm.easyeffects     # PipeWire 기반 강력한 오디오 이퀄라이저
+          - com.rafaelmardojai.Blanket      # 집중/수면을 돕는 백색소음(주변 소리) 재생기
+          - de.haeckerfelix.Shortwave       # 전 세계 인터넷 라디오 검색 및 청취 앱
+          - io.github.seadve.Mousai         # 오디오 기반 음악 인식/찾기 프로그램
+          - org.kde.haruna                  # mpv 엔진 기반의 강력한 동영상 플레이어
+          - org.nickvision.tubeconverter    # 유튜브 등 웹 비디오/오디오 다운로더
+          - com.github.ryonakano.reco       # 심플하고 간편한 시스템/마이크 오디오 녹음기
+
+          # --- 그래픽 & 데스크톱 꾸미기 ---
+          - org.kde.gwenview                # 이미지 회전 및 간단한 편집을 지원하는 뷰어
+          - io.gitlab.adhami3310.Impression # USB 부팅 디스크 제작(플래싱) 도구
+          - io.github.davidoc26.wallpaper_selector # 바탕화면 이미지 탐색 및 변경 도구
+
+          # --- AI, 문서 & 유틸리티 ---
+          - ai.jan.Jan                      # 로컬 오프라인 AI LLM 구동 클라이언트
+          - com.notesnook.Notesnook         # 종단간 암호화(E2E) 지원 프라이빗 노트
+          - dev.vencord.Desktop             # Vencord 트윅이 적용된 디스코드 클라이언트
+          - org.kde.kcalc                   # 공학용 계산 기능을 지원하는 다기능 계산기
+          - org.kde.okular                  # PDF, EPUB 등 범용 문서/서적 뷰어
+          - net.gpro.gproapp                # 그랑프리 레이싱 온라인 앱 및 통계 도구
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
