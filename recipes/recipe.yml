@@ -6,8 +6,8 @@ name: yeon-os
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 44 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -20,11 +20,37 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        - secureblue/packages
     install:
       packages:
-        - micro
-        - starship
+        # Brave (repo file은 files/system/etc/yum.repos.d/ 에 배치)
+        - brave-browser
+        # secureblue COPR
+        - bubblejail
+        # 보안/점검 도구
+        - kdiskmark
+        - clamav
+        - clamav-update
+        - rkhunter
+        - lynis
+        # 아이콘
+        - papirus-icon-theme
+        # pip
+        - python3-pip
+        # 한글 입력
+        - fcitx5
+        - fcitx5-hangul
+        - fcitx5-configtool
+        - fcitx5-qt
+        - fcitx5-gtk
+        # Noto 폰트 (전 언어)
+        - google-noto-fonts-common
+        - google-noto-sans-fonts
+        - google-noto-serif-fonts
+        - google-noto-mono-fonts
+        - google-noto-sans-cjk-fonts
+        - google-noto-serif-cjk-fonts
+        - google-noto-emoji-fonts
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
