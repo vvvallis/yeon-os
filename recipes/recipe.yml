@@ -32,6 +32,8 @@ modules:
         - bubblejail
         # secureblue COPR
         - bubblejail
+        #가상화
+        - gnome-boxes
         # 보안/점검 도구
         - kdiskmark
         - clamav
@@ -70,7 +72,40 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
-          - org.gnome.Loupe
+          - ai.jan.Jan
+          - com.bitwarden.desktop
+          - com.github.Matoking.protontricks
+          - com.github.ryonakano.reco
+          - com.github.tchx84.Flatseal
+          - com.github.wwmm.easyeffects
+          - com.notesnook.Notesnook
+          - com.rafaelmardojai.Blanket
+          - com.surfshark.Surfshark
+          - com.vysp3r.ProtonPlus
+          - de.haeckerfelix.Shortwave
+          - dev.vencord.Desktop
+          - io.github.DenysMb.Kontainer
+          - io.github.davidoc26.wallpaper_selector
+          - io.github.flattool.Warehouse
+          - io.github.giantpinkrobots.flatsweep
+          - io.github.seadve.Mousai
+          - io.github.tobagin.keysmith
+          - io.gitlab.adhami3310.Impression
+          - io.gitlab.librewolf-community
+          - io.missioncenter.MissionCenter
+          - it.mijorus.gearlever
+          - net.gpro.gproapp
+          - net.nokyan.Resources
+          - org.gnome.Firmware
+          - org.gnome.World.PikaBackup
+          - org.gnome.World.Secrets
+          - org.kde.gwenview
+          - org.kde.haruna
+          - org.kde.kcalc
+          - org.kde.okular
+          - org.nickvision.tubeconverter
+          - org.qbittorrent.qBittorrent
+          - org.telegram.desktop
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
