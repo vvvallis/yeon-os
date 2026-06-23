@@ -29,6 +29,7 @@ modules:
     install:
       packages:
         - brave-browser
+        - gallery-dl
         # secureblue COPR
         #- bubblejail
         #가상화
