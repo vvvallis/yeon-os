@@ -22,15 +22,15 @@ modules:
       cleanup: true
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-      #copr:
-        #- secureblue/packages
+      copr:
+        - secureblue/packages
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
       packages:
         - brave-browser
         # secureblue COPR
-        #- bubblejail
+        - bubblejail
         #가상화
         - gnome-boxes
         # 보안/점검 도구
@@ -77,6 +77,7 @@ modules:
 
           # --- 시스템 관리 & 패키지 도구 ---
           - com.github.tchx84.Flatseal      # 플랫팩 앱들의 샌드박스 권한 제어기
+          - io.github.denysmb.unify         # 웹앱 매니저
           - io.github.DenysMb.Kontainer     # 디스트로박스(Distrobox) 컨테이너 관리 GUI
           - io.github.giantpinkrobots.flatsweep # 플랫팩 삭제 후 남은 찌꺼기 파일 청소기
           - it.mijorus.gearlever            # 독립형 AppImage 파일 통합 및 관리 툴
