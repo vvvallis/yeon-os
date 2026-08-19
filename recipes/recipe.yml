@@ -57,6 +57,7 @@ modules:
         - google-noto-sans-cjk-fonts
         - google-noto-serif-cjk-fonts
         - google-noto-emoji-fonts
+        - google-noto-sans-mongolian-fonts 
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
