@@ -26,7 +26,7 @@ modules:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
       packages:
-        - brave-browser
+        - brave-origin
         #가상화
         - gnome-boxes
         # 보안/점검 도구
