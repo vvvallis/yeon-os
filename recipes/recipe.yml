@@ -23,14 +23,14 @@ modules:
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
       copr:
-        - secureblue/packages
+        #- secureblue/packages
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
       packages:
         - brave-browser
         # secureblue COPR
-        - bubblejail
+        #- bubblejail
         #가상화
         - gnome-boxes
         # 보안/점검 도구
