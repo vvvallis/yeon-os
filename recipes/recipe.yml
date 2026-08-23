@@ -86,7 +86,6 @@ modules:
 
           # --- 보안 & 개인정보 보호 ---
           - com.bitwarden.desktop           # 오픈소스 크로스 플랫폼 비밀번호 관리자
-          - com.surfshark.Surfshark         # 서프샤크 VPN 공식 데스크톱 클라이언트
           - org.gnome.World.Secrets         # Keepass 형식 포맷 지원 비밀번호 보관소
 
           # --- 멀티미디어 & 사운드 ---
