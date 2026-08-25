@@ -96,7 +96,6 @@ modules:
           # --- 멀티미디어 & 사운드 ---
           - com.github.wwmm.easyeffects     # PipeWire 기반 강력한 오디오 이퀄라이저
           - de.haeckerfelix.Shortwave       # 전 세계 인터넷 라디오 검색 및 청취 앱
-          - org.kde.haruna                  # mpv 엔진 기반의 강력한 동영상 플레이어
           - org.nickvision.tubeconverter    # 유튜브 등 웹 비디오/오디오 다운로더
           - com.github.ryonakano.reco       # 심플하고 간편한 시스템/마이크 오디오 녹음기
 
