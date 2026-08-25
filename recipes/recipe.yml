@@ -54,6 +54,11 @@ modules:
         - google-noto-serif-cjk-fonts
         - google-noto-emoji-fonts
         - google-noto-sans-mongolian-fonts 
+        #게임
+        - steam
+        - lutris
+        #안드로이드
+        - waydroid
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
