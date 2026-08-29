@@ -56,7 +56,6 @@ modules:
         - google-noto-sans-mongolian-fonts 
         # 체스 심볼 및 특수문자 폰트 추가
         - gdouros-symbola-fonts
-        - gnu-free-symbol-fonts
         #게임
         - steam
         - lutris
