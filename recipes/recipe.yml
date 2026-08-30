@@ -61,6 +61,9 @@ modules:
         - lutris
         #안드로이드
         - waydroid
+        #AI
+        - libomp
+        - numactl
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
