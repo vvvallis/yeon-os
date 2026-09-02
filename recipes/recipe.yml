@@ -93,6 +93,7 @@ modules:
 
           # --- 보안 & 개인정보 보호 ---
           - org.gnome.World.Secrets         # Keepass 형식 포맷 지원 비밀번호 보관소
+          - org.cryptomator.Cryptomator     # 클라우드 암호화
 
           # --- 멀티미디어 & 사운드 ---
           - com.github.wwmm.easyeffects     # PipeWire 기반 강력한 오디오 이퀄라이저
