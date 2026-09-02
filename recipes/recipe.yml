@@ -107,7 +107,6 @@ modules:
 
           # --- AI, 문서 & 유틸리티 ---
           - ai.jan.Jan                      # 로컬 오프라인 AI LLM 구동 클라이언트
-          - com.notesnook.Notesnook         # 종단간 암호화(E2E) 지원 프라이빗 노트
           - dev.vencord.Vesktop             # Vencord 트윅이 적용된 디스코드 클라이언트
           - org.kde.kcalc                   # 공학용 계산 기능을 지원하는 다기능 계산기
           - org.kde.okular                  # PDF, EPUB 등 범용 문서/서적 뷰어
