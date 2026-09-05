@@ -59,6 +59,7 @@ modules:
         #게임
         - steam
         - lutris
+        - stockfish
         #안드로이드
         - waydroid
     remove:
