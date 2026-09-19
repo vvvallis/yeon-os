@@ -72,6 +72,7 @@ modules:
           - org.qbittorrent.qBittorrent     # 광고 없는 오픈소스 토렌트 다운로더
           - dev.vencord.Vesktop             # Vencord 트윅이 적용된 디스코드 클라이언트
           - org.nickvision.tubeconverter    # 유튜브 등 웹 비디오/오디오 다운로더
+          - org.mozilla.thunderbird         # 이메일 관리자
 
           # --- 시스템 관리 & 패키지 도구 ---
           - com.github.tchx84.Flatseal      # 플랫팩 앱들의 샌드박스 권한 제어기
