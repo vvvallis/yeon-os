@@ -95,7 +95,7 @@ modules:
           - org.kde.kcalc                   # 공학용 계산 기능을 지원하는 다기능 계산기
           - org.kde.okular                  # PDF, EPUB 등 범용 문서/서적 뷰어
           - org.kde.gwenview                # 이미지 회전 및 간단한 편집을 지원하는 뷰어
-          - io.github.diegopvlk.Cine        # 동영상 플레이어
+          - org.kde.haruna                  # 동영상 플레이어
           - io.github.seadve.Kooha          # 화면 녹화기
           
       - scope: user # Also add Flathub user repo, but no user packages
