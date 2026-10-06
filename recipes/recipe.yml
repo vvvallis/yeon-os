@@ -27,7 +27,6 @@ modules:
     install:
       packages:
         - brave-origin
-        - whisper-cpp
         #가상화
         - gnome-boxes
         # 보안/점검 도구
